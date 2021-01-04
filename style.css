@@ -1,5 +1,7 @@
 #canvas{
     background-color: cyan;
+    padding: 0;
+    margin: 0;
 }
 
 .main-container{
@@ -7,6 +9,21 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+}
+
+.name-score-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container{
+    display: flex;
+    background-color: darkgoldenrod;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    justify-content: center;
 }
 
 .grid{
@@ -18,4 +35,16 @@
 
 .card-img{
     padding: 3px;
+}
+
+.btn-container{
+    display: flex;
+    padding: 50px;
+}
+
+.btn{
+    color: white;
+    background-color: red;
+    padding: 10px;
+    font-size: 25px;
 }

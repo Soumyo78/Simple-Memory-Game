@@ -8,9 +8,16 @@
 </head>
 <body id="canvas">
 
+    <div class="title-container">Game of Memory</div>
     <div class="main-container">
-        <h3 id="score-text">Score: <span id="result">0</span></h3>
+        <div class="name-score-container">
+            <h3 style="padding-right: 250px;" id="name-text">Welcome, <span id="name">____________________</span></h3>
+            <h3 style="padding-left: 250px;" id="score-text">Score: <span id="result">0</span></h3>
+        </div>
         <div class="grid"></div>
+        <div class="btn-container">
+            <button class="btn" id="restart-btn" onclick="restartGame()">Restart</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

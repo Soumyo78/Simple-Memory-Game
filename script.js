@@ -72,6 +72,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 
+    function getPlayerName(){
+        let name = prompt("Please enter your name to enter in the game.");
+        (name === null) ? document.getElementById('name').innerHTML = "Guest"
+        : document.getElementById('name').innerHTML = name;
+    }
+
     function checkForMatch(){
         var cards = document.querySelectorAll('input');
         const optionOneId = cardChosenId[0];
@@ -111,4 +117,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     createBoard();
+    getPlayerName();
 })
+
+function restartGame(){
+    window.location.reload(true);
+}
